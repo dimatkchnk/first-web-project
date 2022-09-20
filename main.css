@@ -1,0 +1,408 @@
+*,
+:after,
+:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	/* font-family: "Raleway", sans-serif; */
+	font-family: "Spectral", serif;
+}
+
+.header-img {
+	display: flex;
+	position: relative;
+	height: 300px;
+	background-image: url("./img/277308322_318041593646386_5046472653903762619_n.jpg");
+	background-size: cover;
+	background-position: 0 35%;
+}
+
+.header-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(105, 68, 3, 0.658);
+	backdrop-filter: blur(1.8px);
+	transition: 0.7s;
+}
+
+.header-text {
+	margin: auto;
+	text-transform: uppercase;
+	font-weight: bold;
+	z-index: 1;
+	color: wheat;
+}
+
+.header-text h1 {
+	letter-spacing: 2px;
+	margin-bottom: 3px;
+}
+
+nav {
+	display: flex;
+	position: sticky;
+	margin-bottom: 20px;
+	height: 70px;
+	top: 0;
+	align-items: center;
+	background-color: #333;
+	z-index: 10;
+}
+
+nav ul {
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+nav li {
+	list-style: none;
+	padding: 0 60px;
+	line-height: 70px;
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: wheat;
+	letter-spacing: 2px;
+	transition: color 0.3s;
+}
+
+nav a:hover {
+	color: #fff;
+}
+
+.nav-menu {
+	display: flex;
+}
+
+.nav-bars-icon {
+	display: none;
+	padding: 15px 20px;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	color: rgb(233, 182, 88);
+	font-size: 2.3rem;
+	transition: display 0.3s;
+}
+
+.active {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+.active-nav-ul {
+	transform: translateX(0px);
+}
+
+.active-nav {
+	height: 400px;
+}
+
+.about-us {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3rem;
+}
+
+.about-us-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #333;
+}
+
+.h2-text {
+	scroll-margin-top: 80px;
+	align-self: flex-start;
+	padding-bottom: 5px;
+	margin: 30px;
+	font-size: 2.2rem;
+	color: rgb(233, 182, 88);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	border-bottom: 5px solid rgb(233, 182, 88);
+}
+
+.about-us p {
+	margin: 25px;
+	font-size: 1.2rem;
+	order: 1;
+}
+
+.about-us img {
+	display: flex;
+	height: 50%;
+	width: 30%;
+	border-radius: 15px;
+	margin: 5rem 1.2rem 1.2rem;
+}
+
+.service {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-child {
+	display: flex;
+	height: 200px;
+	width: 40%;
+	margin: 0;
+	cursor: pointer;
+
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	transition: transform 0.3s;
+}
+
+.service-child:hover .service-bg {
+	background-color: rgba(186, 126, 15, 0.51);
+}
+
+.service-child:hover .service-text h2 {
+	color: #fff;
+	transform: scale(1.2);
+}
+
+.service-child:hover .service-text p {
+	color: #fff;
+	transform: scale(1.2);
+}
+
+.service-bg {
+	position: absolute;
+
+	width: 40%;
+	height: 200px;
+	background-color: rgba(57, 50, 50, 0.57);
+
+	transition: 0.4s;
+}
+.service-text {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: auto;
+	z-index: 5;
+}
+
+.service-text p {
+	color: rgb(233, 182, 88);
+	transition: color 0.3s, transform 0.3s;
+}
+
+.service h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	color: rgb(233, 182, 88);
+	transition: color 0.3s, transform 0.3s;
+}
+
+.service-1 {
+	background-image: url("./img/ease-g1ca5f53ad_1920.jpg");
+}
+
+.service-2 {
+	background-image: url("./img/stones-g48d4b585f_1920.jpg");
+}
+
+.service-3 {
+	background-image: url("./img/woman-gd7b26d067_1920.jpg");
+}
+
+.service-4 {
+	background-image: url("./img/wellness-g538fab8cf_1920.jpg");
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+	margin: 0 auto;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.table {
+	width: 110%;
+	border: 1px solid #333;
+	margin: 30px 0;
+}
+
+.table-header {
+	display: flex;
+	width: 100%;
+	background: #333;
+	padding: 18px 0;
+}
+
+.table-row {
+	display: flex;
+	width: 100%;
+	padding: 18px 0;
+
+	transition: 0.3s;
+}
+
+.table-data,
+.theader-item {
+	flex: 1 1 20%;
+	text-align: center;
+}
+
+.theader-item {
+	text-transform: uppercase;
+	color: wheat;
+}
+
+.table-row:hover {
+	background-color: rgb(209, 183, 133);
+	color: #fff;
+}
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.contact-text p {
+	margin: 30px;
+	margin-left: 60px;
+}
+
+.icons {
+	margin: 10px;
+	color: rgb(233, 182, 88);
+}
+
+.icons-footer {
+	margin: 0 3px;
+	font-size: 1.5rem;
+	color: rgb(233, 182, 88);
+	transition: color 0.3s;
+}
+
+.icons-footer:hover {
+	color: #fff;
+}
+
+footer {
+	display: flex;
+	height: 100px;
+	width: 100%;
+	background-color: #333;
+}
+
+.footer-text {
+	margin: auto;
+	color: wheat;
+	font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+	/* nav{
+		background-color: #fff;
+		justify-content: center;
+		
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+
+	nav li a{
+		display: none;
+		
+	} */
+	nav {
+		display: flex;
+		position: sticky;
+		height: 70px;
+		margin-bottom: 20px;
+		background-color: #fff;
+		z-index: 10;
+	}
+	
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transform: translateX(-600px);
+		transition: transform .3s;
+		
+	}
+
+	nav li {
+		display: flex;
+		margin-left: 15%;
+		padding: 0 60px;
+		align-self: center;
+		list-style: none;
+		line-height: 70px;
+	}
+
+	nav li a {
+		color: rgb(233, 182, 88);
+	}
+
+	.nav-bars-icon {
+		display: flex;
+		align-self: flex-start;
+	}
+
+	nav a:hover {
+		color: #333;
+	}
+}
+
+@media (max-width: 1200px) {
+	.about-us {
+		flex-direction: column;
+	}
+	.about-us img {
+		width: 75%;
+		align-self: center;
+	}
+
+	.service {
+		flex-direction: column;
+	}
+	.service-child {
+		width: 75%;
+	}
+	.service-bg {
+		width: 75%;
+	}
+}
+
+@media (max-width: 1100px) {
+	.table {
+		width: 80%;
+	}
+}
